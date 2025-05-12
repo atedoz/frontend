@@ -37,12 +37,24 @@
                 border-radius: 10px;
                 overflow: hidden;
                 background-color: #f8f9fa;
+                margin-bottom: 1rem;
+                transition: transform 0.3s;
+                display: inline-block;
+                width: 100%;
             }
 
             .masonry-item img {
                 width: 100%;
                 height: auto;
                 display: block;
+                width: 100%;
+                display: block;
+                transition: transform 0.3s;
+            }
+
+            .masonry-item:hover img {
+                transform: scale(1.05);
+                animation: shake 0.5s;
             }
         </style>
     </head>
