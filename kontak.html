@@ -53,30 +53,30 @@
     <h2>Where Every Frame</h2>
     <h3>Speaks, Every Detail Inspires</h3>
 
-    <form class="contact-form">
+    <form class="contact-form" id="contactForm">
       <div class="row">
         <div class="input-group">
           <label>Full Name</label>
-          <input type="text" placeholder="Enter Your Name"/>
+          <input type="text" id="fullName" placeholder="Enter Your Name" required />
         </div>
         <div class="input-group">
           <label>Company Name</label>
-          <input type="text" placeholder="Enter Your Company"/>
+          <input type="text" id="companyName" placeholder="Enter Your Company" />
         </div>
       </div>
       <div class="row">
         <div class="input-group">
           <label>Email Address</label>
-          <input type="email" placeholder="Enter Your Email"/>
+          <input type="email" id="email" placeholder="Enter Your Email" required />
         </div>
         <div class="input-group">
           <label>Country</label>
-          <input type="text" placeholder="Enter Country"/>
+          <input type="text" id="country" placeholder="Enter Country" />
         </div>
       </div>
       <div class="input-group full">
         <label>Write a Message</label>
-        <textarea placeholder="Write your experience here!"></textarea>
+        <textarea id="message" placeholder="Write your experience here!" required></textarea>
       </div>
       <button class="submit-btn" type="submit">Send to us</button>
     </form>
@@ -142,68 +142,71 @@
   
   <!-- Footer -->
   <div class="container-fluid g-0">
-    <footer class="row g-0 text-white py-5 mt-5" style="background: #24397c">
-      <div class="col-md-3 mb-3 d-flex flex-column align-items-center">
-        <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
-        <p>© 2025</p>
-      </div>
+    <footer class="text-white py-5 mt-5" style="background: #24397c">
+      <div class="row px-3">
+        <div class="col-lg-3 col-md-12 px-3 mb-3 d-flex flex-column align-items-center">
+          <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
+          <p>© 2025</p>
+        </div>
 
-      <div class="col-md-3 mb-3">
-        <h5>Layanan Kami</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Photobooth</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Partnership</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Photo Studio</a>
-          </li>
-        </ul>
-      </div>
+        <div class="col-lg-3 col-md-4 px-3 mb-3">
+          <h5 class="mb-3">Layanan Kami</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Photobooth</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Partnership</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Photo Studio</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col-md-3 mb-3">
-        <h5>Social</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Instagram</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Tiktok</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Whatsapp</a>
-          </li>
-        </ul>
-      </div>
+        <div class="col-lg-3 col-md-4 px-3 mb-3">
+          <h5 class="mb-3">Social</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Instagram</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Tiktok</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Whatsapp</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col-md-3">
-        <h5>About</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Sutoori</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Layanan Kami</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Event</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Galeri</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Partnership</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-white">Kontak Kami</a>
-          </li>
-        </ul>
+        <div class="col-lg-3 col-md-4 px-3">
+          <h5 class="mb-3">About</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Sutoori</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Layanan Kami</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Event</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Galeri</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Partnership</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>
 
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/json/contacts.js"></script>
   <script>
     const contactList = document.getElementById("contact-list");
@@ -217,6 +220,45 @@
         <p>${contact.description}</p>
       `;
       contactList.appendChild(contactItem);
+    });
+  </script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+  
+      // ambil data dari input
+      const name = document.getElementById("fullName").value;
+      const company = document.getElementById("companyName").value;
+      const email = document.getElementById("email").value;
+      const country = document.getElementById("country").value;
+      const message = document.getElementById("message").value;
+
+      // validasi
+      if (name === "" || company === "" || email === "" || country === "" || message === "") {
+        alert("Please fill in all the fields!");
+        return;
+      }
+
+      // isi email
+      const body = `
+  Full Name: ${name}
+  Company: ${company}
+  Email: ${email}
+  Country: ${country}
+  
+  Message:
+  ${message}
+      `.trim();
+  
+      // encode untuk URL
+      const subject = encodeURIComponent("Contact Form Submission");
+      const bodyEncoded = encodeURIComponent(body);
+  
+      const to = "youremail@example.com";
+      const mailtoLink = `mailto:${to}?subject=${subject}&body=${bodyEncoded}`;
+  
+      // redirect ke email
+      window.location.href = mailtoLink;
     });
   </script>
 </body>
