@@ -1,266 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - SUTOORI</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/css_kontak.css" />
-  <style>
-    .bg-primary {
-      background-color: #24397c !important;
-    }
-  </style>
-</head>
-<body>
-  <!-- Awal Header -->
-  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/Logo-20.png" class="nav-item" width="50" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layanan.html">Our Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portofolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="kontak.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Akhir Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - SUTOORI</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/css_kontak.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="icon" type="image" href="assets/img/Logo-20.png" />
 
-  <section class="hero">
-    <h1>Let's Create Memories Together</h1>
-    <h2>Get in Touch Today!</h2>
-    <p>At LensorA, we are more than just photographers—we are storytellers, creators, and visionaries. With a passion for art and an eye for detail, we transform fleeting moments into timeless memories.</p>
-  </section>
-
-  <section class="contact-section">
-    <button class="booking-btn">Booking</button>
-    <h2>Where Every Frame</h2>
-    <h3>Speaks, Every Detail Inspires</h3>
-
-    <form class="contact-form" id="contactForm">
-      <div class="row">
-        <div class="input-group">
-          <label>Full Name</label>
-          <input type="text" id="fullName" placeholder="Enter Your Name" required />
-        </div>
-        <div class="input-group">
-          <label>Company Name</label>
-          <input type="text" id="companyName" placeholder="Enter Your Company" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-group">
-          <label>Email Address</label>
-          <input type="email" id="email" placeholder="Enter Your Email" required />
-        </div>
-        <div class="input-group">
-          <label>Country</label>
-          <input type="text" id="country" placeholder="Enter Country" />
-        </div>
-      </div>
-      <div class="input-group full">
-        <label>Write a Message</label>
-        <textarea id="message" placeholder="Write your experience here!" required></textarea>
-      </div>
-      <button class="submit-btn" type="submit">Send to us</button>
-    </form>
-  </section>
-
-  <!-- Contact Info Section -->
-<section class="contact-info">
-  <button class="mini-btn">Contact Us</button>
-  <h2>Let’s Stay Connected</h2>
-  <div class="info-grid" id="contact-list">
-    <!-- <div class="info-box">
-      <span>📧</span>
-      <h4>Email Address</h4>
-      <p>Sutooristudio@mail.com</p>
-    </div> -->
-  </div>
-</section>
-
-<!-- Google Maps Section -->
-<section class="map-section">
-  <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section">
-  <button class="mini-btn">FAQ Section</button>
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-list">
-    <div class="faq-item">
-      <button>➕ How far in advance should I book my session?</button>
-      <p>We recommend booking at least 2 weeks in advance to ensure availability...</p>
-    </div>
-    <div class="faq-item">
-      <button>➕ How can I book a photography session?</button>
-    </div>
-    <div class="faq-item">
-      <button>➕ What types of photography services do you offer?</button>
-    </div>
-    <div class="faq-item">
-      <button>➕ Do you provide photo editing services?</button>
-    </div>
-    <div class="faq-item">
-      <button>➕ How long will it take to receive my photos after the session?</button>
-    </div>
-    <div class="faq-item">
-      <button>➕ What is included in the photography packages?</button>
-    </div>
-    <div class="faq-item">
-      <button>➕ What should I wear for my photo session?</button>
-    </div>
-  </div>
-</section>
-
-  <!-- Newsletter Section -->
-  <section class="newsletter-section">
-    <button class="mini-btn">Subscribe</button>
-    <h2>Join the Sutoori community and let us bring your<br>vision to life, one frame at a time!</h2>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Enter Your Email Address..." required />
-      <button type="submit">➤</button>
-    </form>
-  </section>
-  
-  <!-- Footer -->
-  <div class="container-fluid g-0">
-    <footer class="text-white py-5 mt-5" style="background: #24397c">
-      <div class="row px-3">
-        <div class="col-lg-3 col-md-12 px-3 mb-3 d-flex flex-column align-items-center">
-          <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
-          <p>© 2025</p>
-        </div>
-
-        <div class="col-lg-3 col-md-4 px-3 mb-3">
-          <h5 class="mb-3">Layanan Kami</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Photobooth</a>
+    <style>
+      .bg-primary {
+        background-color: #24397c !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Awal Header -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/Logo-20.png" class="nav-item" width="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Partnership</a>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Our Services</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Photo Studio</a>
+            <li class="nav-item">
+              <a class="nav-link" href="portofolio.html">Portfolio</a>
             </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-4 px-3 mb-3">
-          <h5 class="mb-3">Social</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Instagram</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Tiktok</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Whatsapp</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-4 px-3">
-          <h5 class="mb-3">About</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Sutoori</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Layanan Kami</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Event</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Galeri</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Partnership</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Kontak Kami</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="kontak.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-    </footer>
-  </div>
+    </nav>
+    <!-- Akhir Header -->
 
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/json/contacts.js"></script>
-  <script>
-    const contactList = document.getElementById("contact-list");
+    <section class="hero my-5">
+      <h1>Let's Create Memories Together</h1>
+      <h2>Get in Touch Today!</h2>
+      <p>At Sutoori, we are more than just photographers—we are storytellers, creators, and visionaries. With a passion for art and an eye for detail, we transform fleeting moments into timeless memories.</p>
+    </section>
 
-    contacts.forEach((contact) => {
-      const contactItem = document.createElement("div");
-      contactItem.classList.add("info-box");
-      contactItem.innerHTML = `
+    <section class="contact-section">
+      <div class="text-center">
+        <button class="booking-btn">Contact Us</button>
+        <h2>Where Every Frame</h2>
+        <h3>Speaks, Every Detail Inspires</h3>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="row mb-3">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter Your Name" required />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="institutionName" class="form-label">Institution / Organization Name</label>
+            <input type="text" class="form-control" id="institutionName" placeholder="Leave this blank if you don't have one" />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="domicile" class="form-label">Domicile</label>
+            <input type="text" class="form-control" id="domicile" placeholder="Enter your current place of residence" />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Write a Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="I want to ask about Sutoori..." required></textarea>
+        </div>
+        <div class="text-center">
+          <button class="submit-btn" type="submit">Send to us</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info text-center">
+      <button class="mini-btn">Our Contact</button>
+      <h2>Let’s Stay Connected</h2>
+      <div class="info-grid text-center" id="contact-list"></div>
+    </section>
+
+    <!-- FAQ Button -->
+    <section class="container py-5">
+      <div class="text-center my-3">
+        <button class="mini-btn">FAQ</button>
+        <h2 class="fw-bolder">Have a question?</h2>
+        <h4>Check our frequently asked question about Sutoori!</h4>
+      </div>
+
+      <!-- Accordion FAQ -->
+      <div class="accordion accordion-flush" id="faq">
+        <!-- Question One -->
+        <div class="accordion-item">
+          <h6 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-answerOne" aria-expanded="false" aria-controls="faq-answerOne">
+              What should I contact to booked Sutoori's services?
+            </button>
+          </h6>
+          <!-- Answer One -->
+          <div id="faq-answerOne" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">You can contact by our Email, WhatsApp number, or Instagram's DMs, for quicker responses, you can message us through WhatsApp number.</div>
+          </div>
+        </div>
+
+        <!-- Question Two -->
+        <div class="accordion-item">
+          <h6 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-answerTwo" aria-expanded="false" aria-controls="faq-answerTwo">
+              Can I request a custom package based on my needs?
+            </button>
+          </h6>
+          <!-- Answer Three -->
+          <div id="faq-answerTwo" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">You can request your custom package based on your needs, you can even negotiate the prices with our services.</div>
+          </div>
+        </div>
+
+        <!-- Question Three -->
+        <div class="accordion-item">
+          <h6 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-answerThree" aria-expanded="false" aria-controls="faq-answerThree">Do you provide express (rush) services?</button>
+          </h6>
+          <!-- Answer Three -->
+          <div id="faq-answerThree" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">We provide express service with double fee, you can get more information through messaging our admin.</div>
+          </div>
+        </div>
+
+        <!-- Question Four -->
+        <div class="accordion-item">
+          <h6 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-answerFour" aria-expanded="false" aria-controls="faq-answerFour">Do I get revisions for design work?</button>
+          </h6>
+          <!-- Answer Three -->
+          <div id="faq-answerFour" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">For design work (including motion graphics and editing) you can get 1 (one) revision based on your order, if you need another revision after the first one, you have to pay fee for any request.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid g-0">
+      <footer class="text-white py-5" style="background: #24397c">
+        <div class="row px-3">
+          <div class="col-lg-3 col-md-12 px-3 mb-3 d-flex flex-column align-items-center">
+            <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
+            <p>© 2025</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 px-3 mb-3">
+            <h5 class="mb-3">Our Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="layanan.html#yearbook" class="nav-link p-0 text-white">Yearbook</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="layanan.html#photography" class="nav-link p-0 text-white">Photography</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="layanan.html#videography" class="nav-link p-0 text-white">Videography</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 px-3 mb-3">
+            <h5 class="mb-3">Social</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="https://www.instagram.com/sutoori.co/" class="nav-link p-0 text-white">Instagram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:sutoori@mail.com" class="nav-link p-0 text-white">Email</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="https://wa.me/6285211616326" class="nav-link p-0 text-white">Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 px-3">
+            <h5 class="mb-3">About</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link p-0 text-white">Sutoori</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="layanan.html" class="nav-link p-0 text-white">Our Services</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="portofolio.html" class="nav-link p-0 text-white">Portfolio</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="kontak.html" class="nav-link p-0 text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/json/contacts.js"></script>
+    <script>
+      const contactList = document.getElementById("contact-list");
+
+      contacts.forEach((contact) => {
+        const contactItem = document.createElement("div");
+        contactItem.classList.add("info-box");
+        contactItem.innerHTML = `
         <span>${contact.icon}</span>
         <h4>${contact.name}</h4>
         <p>${contact.description}</p>
       `;
-      contactList.appendChild(contactItem);
-    });
-  </script>
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-  
-      // ambil data dari input
-      const name = document.getElementById("fullName").value;
-      const company = document.getElementById("companyName").value;
-      const email = document.getElementById("email").value;
-      const country = document.getElementById("country").value;
-      const message = document.getElementById("message").value;
+        contactList.appendChild(contactItem);
+      });
+    </script>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-      // validasi
-      if (name === "" || company === "" || email === "" || country === "" || message === "") {
-        alert("Please fill in all the fields!");
-        return;
-      }
+        const name = document.getElementById("fullName").value.trim();
+        const institution = document.getElementById("institutionName").value.trim();
+        const domicile = document.getElementById("domicile").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const email = document.getElementById("email").value.trim();
 
-      // isi email
-      const body = `
-  Full Name: ${name}
-  Company: ${company}
-  Email: ${email}
-  Country: ${country}
-  
-  Message:
-  ${message}
-      `.trim();
-  
-      // encode untuk URL
-      const subject = encodeURIComponent("Contact Form Submission");
-      const bodyEncoded = encodeURIComponent(body);
-  
-      const to = "youremail@example.com";
-      const mailtoLink = `mailto:${to}?subject=${subject}&body=${bodyEncoded}`;
-  
-      // redirect ke email
-      window.location.href = mailtoLink;
-    });
-  </script>
-</body>
+        // Ganti nomor di bawah ini dengan nomor tujuan (tanpa tanda +)
+        const whatsappNumber = "6285211616326";
+
+        // Gunakan institution jika diisi, jika tidak pakai country
+        const senderInfo = institution !== "" ? institution : domicile;
+
+        const finalMessage = `Halo, perkenalkan saya ${name} dari ${senderInfo} ingin membicarakan beberapa hal terkait sutoori\n\n${message}\n\nBerikut adalah email saya untuk korespondensi lebih lanjut: ${email}`;
+
+        const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(finalMessage)}`;
+
+        window.open(url, "_blank"); // buka di tab baru
+      });
+    </script>
+  </body>
 </html>
-  

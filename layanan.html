@@ -1,4 +1,3 @@
-<!-- Page: Layanan -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/layanan.css" />
-    <title>Sutoori</title>
+    <link rel="icon" type="image" href="assets/img/Logo-20.png" />
+    <script src="assets/js/bootstrap.min.js"></script>
+    <title>Our Services</title>
   </head>
   <body>
-    <!-- Topbar -->
-
-    <!-- Awal Header -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <!-- Header -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary navbar-dark">
       <div class="container-fluid">
         <a class="ms-2 navbar-brand" href="#">
           <img src="assets/img/Logo-20.png" class="nav-item" width="50" />
@@ -40,180 +39,126 @@
     </nav>
     <!-- Akhir Header -->
 
-    <!-- Layanan -->
-    <div class="container">
-      <div class="">
-        <h2 class="text-center mb-5 fw-bold py-5">Our Services</h2>
+    <div class="container my-5 pt-5">
+      <h1 class="fw-bolder text-center mt-5">Our Services</h1>
 
-        <!-- Photo booth -->
-        <div class="row mb-4">
-          <div class="col-md-6">
-            <div class="d-flex flex-column justify-content-between h-100 py-5">
-              <div>
-                <h5 class="fw-bold mb-3">Yearbook</h5>
+      <!-- Yearbook -->
+      <div class="row my-5" id="yearbook">
+        <div class="col-md-6 p-5">
+          <h3 class="fw-bolder">Yearbook</h3>
+          <p>Every School memories deserve to be captured in a unique way. Create your unique yearbook with Sutoori!</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img class="img-fluid" src="assets/img/yearbook.png" width="80%" />
+        </div>
+      </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ipsa similique placeat quaerat eveniet nam architecto explicabo modi ea eaque.!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde itaque nihil laboriosam provident repudiandae!</p>
+      <!-- Photography -->
+      <div class="row my-5 pt-5" id="photography">
+        <div class="col-md-6 order-2 order-md-1 text-center">
+          <img class="img-fluid" src="assets/img/photography.webp" width="80%" />
+        </div>
+        <div class="col-md-6 order-1 order-md-2 p-5">
+          <h3 class="fw-bolder">Photography</h3>
+          <p>We offer professional photography services for events, product shoots, formal & model portraits, and more. With creative vision and reliable results, we bring your stories to life — one frame at a time.</p>
+        </div>
+      </div>
+
+      <!-- Videography -->
+      <div class="row my-5" id="videography">
+        <div class="col-md-6 p-5">
+          <h3 class="fw-bolder">Videography</h3>
+          <p>We create powerful visuals through promotional videos, event documentation, and creative content. From concept to final cut, we capture the essence of your brand and moments that matter.</p>
+        </div>
+        <div class="col-md-6 text-center p-5">
+          <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-url="https://www.youtube.com/watch?v=h8ztZJw5Jio" data-video-title="MinOne - Gemastik Bisnis TIK">
+            <img
+              class="img-fluid"
+              src="https://img.playbook.com/AUZpYjiSONTMqj6VaXasg76LjqbwMcBBkezCroLoqac/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJldmll/d3MvOTg2ZWE1NjUt/Mjg0NS00MWZhLTg0/MGQtMTQ0MTVjN2My/ZDhj.webp"
+              alt="IPB Prestasi" />
+            <div class="video-overlay">
+              <div class="play-button">
+                <i class="bi bi-play-fill"></i>
               </div>
-              <div class="d-md-flex gap-3">
-                <a href="#" class="btn btn-dark py-3 px-5 mb-3">Reservation</a>
-                <a href="#" class="btn btn-dark py-3 px-5 mb-3">Learn More</a>
+            </div>
+            <div class="video-duration">3:21</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="videoModalLabel">Video Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="modal-video-container">
+              <!-- Video will be loaded here -->
+              <div id="videoContainer" class="d-flex justify-content-center align-items-center bg-dark text-white p-5">
+                <p class="text-center">Video akan diputar di sini</p>
               </div>
             </div>
           </div>
-
-          <div class="col-md-6">
-            <img src="assets/img/yearbook.png" alt="Image" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Photobox -->
-      <div class="row mb-5">
-        <div class="col-md-6">
-          <img src="assets/img/photography.webp" alt="Image" class="img-fluid" />
-        </div>
-        <div class="col-md-6">
-          <div class="d-flex flex-column justify-content-between h-100 py-5">
-            <div>
-              <h5 class="fw-bold mb-3">Photography</h5>
-
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quibusdam labore tempore ipsa sint unde inventore praesentium autem. Reprehenderit, eum?</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo reiciendis natus impedit repellendus doloribus commodi.</p>
-            </div>
-            <a href="#" class="btn btn-dark py-3 px-5" style="width: fit-content">Reservation</a>
-          </div>
         </div>
       </div>
     </div>
-
-    <!-- Photo Studio -->
-    <div class="text-center text-white" style="background: rgba(0, 0, 0, 0.3); padding: 80px 0">
-      <div class="container d-flex flex-column justify-content-around align-items-center gap-4">
-        <h1 class="fw-bold">Photoshoot</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, doloribus!
-          <br />
-          Lorem ipsum dolor sit amet consectetur.
-        </p>
-
-        <a href="#" class="btn btn-dark" style="width: fit-content">Reservasi</a>
-
-        <img src="assets/img/layanan3.webp" alt="Image" class="ratio ratio-16x9 border border-5 border-white" />
-      </div>
-    </div>
-
-    <!-- Cara Reservasi -->
-    <div class="text-center mt-5 vh-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="container">
-        <h1 class="fw-bold mb-5">How to Reservation?</h1>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-3">
-            <div class="step-number">1</div>
-            <div class="step-label">Choose Service</div>
-          </div>
-          <div class="col-1 d-flex justify-content-center">
-            <div class="step-line w-100"></div>
-          </div>
-          <div class="col-3">
-            <div class="step-number">2</div>
-            <div class="step-label">Reservation</div>
-          </div>
-          <div class="col-1 d-flex justify-content-center">
-            <div class="step-line w-100"></div>
-          </div>
-          <div class="col-3">
-            <div class="step-number">3</div>
-            <div class="step-label">Choose Payment<br />Method</div>
-          </div>
-        </div>
-
-        <div class="vertical-step">
-          <div class="step-number">4</div>
-          <div class="step-label">Arrive as <br />Scheduled</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ -->
-    <div class="container" style="margin-bottom: 100px">
-      <h1 class="text-center fw-bold mb-5">FAQ</h1>
-
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <div class="h-100 p-3 rounded" style="background: rgba(0, 0, 0, 0.1)">
-            <h3 class="fw-bold">Can reservations be cancelled?</h3>
-            <p>Can be canceled. Go to the profile page and select which reservation to cancel.</p>
-          </div>
-        </div>
-        <div class="col-md-6 mb-3">
-          <div class="h-100 p-3 rounded" style="background: rgba(0, 0, 0, 0.1)">
-            <h3 class="fw-bold">What are the payment methods?</h3>
-            <p>We provide payment methods with digital wallets through payment gateways and bank transfers.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Footer -->
     <div class="container-fluid g-0">
-      <footer class="text-white py-5 mt-5" style="background: #24397c">
+      <footer class="text-white py-5" style="background: #24397c">
         <div class="row px-3">
           <div class="col-lg-3 col-md-12 px-3 mb-3 d-flex flex-column align-items-center">
             <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
             <p>© 2025</p>
           </div>
-  
+
           <div class="col-lg-3 col-md-4 px-3 mb-3">
-            <h5 class="mb-3">Layanan Kami</h5>
+            <h5 class="mb-3">Our Services</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Photobooth</a>
+                <a href="layanan.html#yearbook" class="nav-link p-0 text-white">Yearbook</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Partnership</a>
+                <a href="layanan.html#photography" class="nav-link p-0 text-white">Photography</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Photo Studio</a>
+                <a href="layanan.html#videography" class="nav-link p-0 text-white">Videography</a>
               </li>
             </ul>
           </div>
-  
+
           <div class="col-lg-3 col-md-4 px-3 mb-3">
             <h5 class="mb-3">Social</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Instagram</a>
+                <a href="https://www.instagram.com/sutoori.co/" class="nav-link p-0 text-white">Instagram</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Tiktok</a>
+                <a href="mailto:sutoori@mail.com" class="nav-link p-0 text-white">Email</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Whatsapp</a>
+                <a href="https://wa.me/6285211616326" class="nav-link p-0 text-white">Whatsapp</a>
               </li>
             </ul>
           </div>
-  
+
           <div class="col-lg-3 col-md-4 px-3">
             <h5 class="mb-3">About</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Sutoori</a>
+                <a href="index.html" class="nav-link p-0 text-white">Sutoori</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Layanan Kami</a>
+                <a href="layanan.html" class="nav-link p-0 text-white">Our Services</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Event</a>
+                <a href="portofolio.html" class="nav-link p-0 text-white">Portfolio</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Galeri</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Partnership</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-white">Kontak Kami</a>
+                <a href="kontak.html" class="nav-link p-0 text-white">Contact</a>
               </li>
             </ul>
           </div>
@@ -221,6 +166,74 @@
       </footer>
     </div>
 
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+      // Handle video modals
+      const videoModal = document.getElementById("videoModal");
+      if (videoModal) {
+        videoModal.addEventListener("show.bs.modal", function (event) {
+          // Button that triggered the modal
+          const button = event.relatedTarget;
+
+          // Extract info from data attributes
+          const videoUrl = button.getAttribute("data-video-url");
+          const videoTitle = button.getAttribute("data-video-title");
+
+          // Update the modal's content
+          const modalTitle = videoModal.querySelector(".modal-title");
+          const videoContainer = document.getElementById("videoContainer");
+
+          modalTitle.textContent = videoTitle || "Video";
+
+          // Helper to extract YouTube video ID
+          function getYouTubeID(url) {
+            const regExp = /(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?|shorts)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+            const match = url.match(regExp);
+            return match ? match[1] : null;
+          }
+
+          let embedHtml = "";
+          const ytID = getYouTubeID(videoUrl);
+
+          if (ytID) {
+            embedHtml = `
+                        <iframe width="100%" height="100%" 
+                            src="https://www.youtube.com/embed/${ytID}?autoplay=1" 
+                            title="${videoTitle || ""}"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    `;
+          } else if (videoUrl && (videoUrl.endsWith(".mp4") || videoUrl.endsWith(".webm") || videoUrl.endsWith(".ogg"))) {
+            embedHtml = `
+                        <video width="100%" height="100%" controls autoplay>
+                            <source src="${videoUrl}">
+                            Your browser does not support the video tag.
+                        </video>
+                    `;
+          } else if (videoUrl) {
+            // For other URLs, try to embed in an iframe
+            embedHtml = `
+                        <iframe width="100%" height="100%" 
+                            src="${videoUrl}" 
+                            title="${videoTitle || ""}"
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    `;
+          } else {
+            embedHtml = '<p class="text-center">Video tidak ditemukan</p>';
+          }
+
+          videoContainer.innerHTML = embedHtml;
+        });
+
+        // Reset video when modal is closed
+        videoModal.addEventListener("hidden.bs.modal", function () {
+          const videoContainer = document.getElementById("videoContainer");
+          videoContainer.innerHTML = '<p class="text-center">Video akan diputar di sini</p>';
+        });
+      }
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   background-color: #f9fbfd;
+  overflow-x: hidden;
 }
 
 .call-btn {
@@ -41,7 +42,7 @@ body {
 
 .contact-section {
   padding: 40px 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .booking-btn {
@@ -60,7 +61,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .input-group {
@@ -80,7 +81,8 @@ label {
   color: #333;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
@@ -125,8 +127,8 @@ textarea {
   padding: 20px;
   width: 250px;
   border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .info-box span {

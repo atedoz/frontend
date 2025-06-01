@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+.porto-badge {
+  margin-bottom: 10px;
+  padding: 40px 0px;
+}
+
+.porto-badge h1 {
+  font-style: bold;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.porto-badge a {
+  text-decoration: none;
+}
+
+.porto-badge a:hover {
+  text-decoration: none !important;
+  background-color: #24397c !important;
+  color: white !important;
+}
+
+.porto-badge h2 {
+  font-style: italic;
+  margin-top: 10px;
+  font-weight: 400;
+  color: #24397c;
+}
+
+.text-card h4 {
+  color: #24397c;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.text-card a {
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.text-card a:hover {
+  text-decoration: none !important;
+  background-color: #24397c !important;
+  color: white !important;
+}
+
+.card-pict {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: #24397c 0px 0px 20px;
+  margin: 0 auto 50px auto;
+  max-width: calc(100% - 40px); /* Lebar fleksibel tanpa bikin overflow */
+}
+
+.bg-primary {
+  background-color: #24397c !important;
+}
+.hero-section {
+  background-image: url("../img/hero_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 2;
+  padding: 2rem;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 10px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.logo-about {
+  max-width: 200px;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");

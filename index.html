@@ -7,61 +7,16 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
+      <link rel="stylesheet" href="assets/css/index.css">
+      <link rel="icon" type="image" href="assets/img/Logo-20.png">
       <script src="assets/js/bootstrap.min.js"></script>
       <title>Sutoori</title>
-      <style>
-        .bg-primary {
-          background-color: #24397c !important;
-        }
-        .hero-section {
-          background-image: url("assets/img/hero_image.jpg");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-        }
-
-        .hero-content {
-          z-index: 2;
-          padding: 2rem;
-          /* background-color: rgba(0, 0, 0, 0.5); */
-          border-radius: 10px;
-        }
-
-        .hero-section::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.3);
-          z-index: 1;
-        }
-        
-        .logo-about{
-          max-width: 200px;
-          opacity: 0.05;
-          z-index: 0;
-        }
-
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        body {
-          font-family: "Poppins", sans-serif;
-          font-style: normal;
-        }
-      </style>
     </head>
   </head>
   <body>
     <!-- Awal Header -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-expand-lg bg-primary navbar-dark">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/img/Logo-20.png" class="nav-item" width="50" />
         </a>
@@ -100,18 +55,17 @@
       <!-- Akhir Hero Image -->
 
       <!-- About Sutoori -->
-      <section class="container my-5 py-5">
+      <section class="container-fluid my-5 py-5">
         <h1 class="fw-bolder text-center">Sutoori</h1>
         <p class="text-center">
           Sutoori is a creative service provider based in Bogor, West Java, offering photography, videography, graphic design, and motion graphics. Among our wide range of services, our Photobooth remains the most popular, having served
           numerous clients and earned a reputation for excellence.
         </p>
-        <div class="text-center">
-          <a href="layanan.html" class="btn btn-dark">See Our Services ></a>
-        </div>
+        <h5 class="text-center porto-badge">
+          <a href="layanan.html" class="badge bg-light border border-dark rounded-pill px-3 py-2 text-dark">See Our Services ></a>
+        </h5>
 
-        <img src="assets/img/Logo-16.png" class="position-absolute end-0 bottom-0 pe-3 pb-3 d-none d-md-block logo-about">
-      </section>
+        </section>
 
       <!-- Services
       <section class="container my-5 mt-5">
@@ -131,11 +85,11 @@
       <section class="text-white mt-5" style="background: rgba(0, 0, 0, 0.3); padding: 80px 0">
         <h1 class="fw-bolder text-center">Portfolio</h1>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis, deserunt provident reprehenderit distinctio quasi!</p>
-        <div class="text-center">
-          <a href="portofolio.html" class="btn btn-dark">See More ></a>
-        </div>
+        <h5 class="text-center porto-badge">
+          <a href="portofolio.html" class="badge bg-light border border-dark rounded-pill px-3 py-2 text-dark">See More ></a>
+        </h5>
 
-        <div class="container my-5">
+        <div class="container-fluid my-5">
           <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -161,40 +115,43 @@
       </section>
 
       <!-- Why Sutoori -->
-      <section class="container text-center my-5">
-        <div class="row mb-3">
+      <section class="container-fluid text-center my-5 p-5">
+        <div class="row my-3">
           <h1 class="fw-bolder">Why You Should Choose Sutoori?</h1>
         </div>
-        <div class="row">
-          <div class="col-md-3 col-6 p-3">
+        <div class="row my-3">
+          <div class="col-md-3 p-3">
             <div class="border shadow rounded p-4 h-100">
               <i class="bi bi-heart fs-2"></i>
               <h5 class="fw-bold">Experienced</h5>
             </div>
           </div>
-          <div class="col-md-3 col-6 p-3">
+          <div class="col-md-3 p-3">
             <div class="border shadow rounded p-4 h-100">
               <i class="bi bi-hand-thumbs-up fs-2"></i>
               <h5 class="fw-bold">Keeping our quality</h5>
             </div>
           </div>
-          <div class="col-md-3 col-6 p-3">
+          <div class="col-md-3 p-3">
             <div class="border shadow rounded p-4 h-100">
               <i class="bi bi-camera-fill fs-2"></i>
               <h5 class="fw-bold">Professional Crews</h5>
             </div>
           </div>
-          <div class="col-md-3 col-6 p-3">
+          <div class="col-md-3  p-3">
             <div class="border shadow rounded p-4 h-100">
               <i class="bi bi-cash-stack fs-2"></i>
               <h5 class="fw-bold">Competing Prices</h5>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
           <p class="text-center">Interested? Contact us by clicking button below</p>
-          <div class="text-center">
-            <a href="kontak.html" class="btn btn-dark">Contact Us Now!</a>
+          <div class="text-center porto-badge">
+            <h5 class="text-center">
+              <a href="kontak.html" class="badge bg-light border border-dark rounded-pill px-3 py-2 text-dark">Contact Us Now!</a>
+            </h5>
+            
           </div>
         </div>
       </section>
@@ -211,16 +168,16 @@
             </div>
 
             <div class="col-lg-3 col-md-4 px-3 mb-3">
-              <h5 class="mb-3">Layanan Kami</h5>
+              <h5 class="mb-3">Our Services</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Photobooth</a>
+                  <a href="layanan.html#yearbook" class="nav-link p-0 text-white">Yearbook</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Partnership</a>
+                  <a href="layanan.html#photography" class="nav-link p-0 text-white">Photography</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Photo Studio</a>
+                  <a href="layanan.html#videography" class="nav-link p-0 text-white">Videography</a>
                 </li>
               </ul>
             </div>
@@ -229,13 +186,13 @@
               <h5 class="mb-3">Social</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Instagram</a>
+                  <a href="https://www.instagram.com/sutoori.co/" class="nav-link p-0 text-white">Instagram</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Tiktok</a>
+                  <a href="mailto:sutoori@mail.com" class="nav-link p-0 text-white">Email</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Whatsapp</a>
+                  <a href="https://wa.me/6285211616326" class="nav-link p-0 text-white">Whatsapp</a>
                 </li>
               </ul>
             </div>
@@ -244,23 +201,18 @@
               <h5 class="mb-3">About</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Sutoori</a>
+                  <a href="index.html" class="nav-link p-0 text-white">Sutoori</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Layanan Kami</a>
+                  <a href="layanan.html" class="nav-link p-0 text-white">Our Services</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Event</a>
+                  <a href="portofolio.html" class="nav-link p-0 text-white">Portfolio</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Galeri</a>
+                  <a href="kontak.html" class="nav-link p-0 text-white">Contact</a>
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Partnership</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-white">Kontak Kami</a>
-                </li>
+
               </ul>
             </div>
           </div>

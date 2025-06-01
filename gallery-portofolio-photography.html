@@ -1,288 +1,215 @@
 <html>
-    <head>
-        <title>Portofolio Photography</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            .navbar-brand:hover{
-                text-shadow: #24397c 0px 0px 5px;
-                transition: all 0.3s ease-in-out;
-            }
+  <head>
+    <title>Portofolio Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-            .masonry {
-                column-count: 5;
-                column-gap: 1rem;
-            }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/gallery-portfolio.css" />
+    <link rel="icon" type="image" href="assets/img/Logo-20.png" />
+  </head>
+  <body>
+    <!-- Topbar -->
 
-            @media (max-width: 992px) {
-            .masonry {
-                column-count: 3;
-            }
-            }
+    <!-- Awal Header -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: #24397c">
+      <div class="container-fluid">
+        <a class="ms-2 navbar-brand" href="#">
+          <img src="assets/img/Logo-20.png" class="nav-item" width="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portofolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Header -->
 
-            @media (max-width: 768px) {
-            .masonry {
-                column-count: 2;
-            }
-            }
+    <div class="flex sticky-nav justify-center gap-3 pt-3">
+      <ul class="nav justify-content-center py-2">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="gallery-portofolio-crew.html">Crew</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="gallery-portofolio-video.html">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="gallery-portofolio-yearbook.html">Yearbook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="gallery-portofolio-photography.html">Photography</a>
+        </li>
+      </ul>
+    </div>
 
-            @media (max-width: 576px) {
-            .masonry {
-                column-count: 1;
-            }
-            }
+    <figure class="container py-5">
+      <h1 class="fw-bolder mb-2">Photography</h1>
+      <p class="mb-2">We capture the moments that matter with style and passions.</p>
+    </figure>
 
-            .masonry-item {
-                break-inside: avoid;
-                margin-bottom: 1rem;
-                border-radius: 10px;
-                overflow: hidden;
-                background-color: #f8f9fa;
-                margin-bottom: 1rem;
-                transition: transform 0.3s;
-                display: inline-block;
-                width: 100%;
-            }
+    <div class="container mt-4">
+      <div class="masonry">
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/hWxpgrOL7_WDL5NgcBfLl_X5fOh86OXmd1ITSSg1joI/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yMGVj/M2M0Yi1jZmFiLTQy/OWYtOWUzOC0yOWM1/MWY4MTk0MWI.webp" alt="Photography1" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/phLNbnEp-ezCw3SXD-xgzL7MDDT7D1npTg1gT6SF6do/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9mNGI1/OTdiZC0zZGZmLTQy/YWQtYmQ5MC05ODI5/Zjg3ZTI0ZmE.webp" alt="Photography2" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/1qWL4RcQmTPNMjJwwUrI_ksHuPd__PCG2BPYLVBDV00/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8xMGEy/Y2ZlMy0yZDMyLTQ2/MzAtOGEyZC0xYTI2/YWJhNGViZjY.webp" alt="Photography3" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/E9SIQXRtNttpRzcr21Q2ulrB17HNlMVJLvfxN7b34Sg/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy83ODMx/MGMwOS1mNGM3LTQz/YzEtYWU0OS03NjA0/NDNjOTRmZmE.webp" alt="Photography4" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/qYl52n1NYFgGocf6QvYtdBERUvPNYmNknQ9F459sYiY/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9iNDZi/YTJlYi05OThhLTQw/MTItODM0Zi0zOTJm/ODhkMGIxZmQ.webp" alt="Photography5" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/HCgGhaIHGOUxnI1aKGyiUFHSlYofY12tjgKyQT52hco/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8wOGNm/MDRmOC1lMDM5LTQy/OTMtODc2ZC1mNDNk/OWJkYzE5OTA.webp" alt="Photography6" />
+        </div>
+        <div class="masonry-item">
+          <img
+            src="https://img.playbook.com/nIhpNN-pxXyT0Wfd1IDviavCkDR2RagTlrbM2zLHrTM/w:1000/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9s/YXJnZV9wcmV2aWV3/cy82ZGFmMDlhYS1j/NjBkLTQ0MGEtYWM1/My1kY2UxZGY1ZWY0/Mjc.webp"
+            alt="Photography7" />
+        </div>
+        <div class="masonry-item">
+          <img
+            src="https://img.playbook.com/62nGhlekjVu2ViSz-xSyUhqd0eQGJd5mx0AohDqSAwM/w:1000/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9s/YXJnZV9wcmV2aWV3/cy84Y2I3OGMzNy1l/YzBmLTQ2MzEtOWI3/Mi04OTYzNzhjNDUx/Mzk.webp"
+            alt="Photography8" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/hTGd7qPu4dJwM8-qV3eyyRXKz2tLMiVVxOBZdKA0Xb8/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8wZmFj/ZTA2ZC0zMmYyLTRm/ZDctYTljNy1lZjQ1/ZGVjY2NjNWY.webp" alt="Photography9" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/YHYSlLDF3MqP0xrAs1plkKhpocJe4EANpMYVvf0Yc08/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy82NzNl/NzQxNy0xYWVlLTQz/OWYtYjkxNy02MTc2/NGVjYzM3NDI.webp" alt="Photography10" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/cXQrLKCtMSFm3soc7FXYTjsVirMP7b6AZQE_9ndcwXE/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9lMjMx/ODk5ZS02OThhLTQw/Y2EtOWUyNy01Mzhj/N2I0Mzc1MTM.webp" alt="Photography11" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/hjltrIahsIpLbjP-rI6a2f9vEFLZlCql5PggPiVp5Kw/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy82M2Jj/NDE5ZS02ODE3LTQz/YTktODMyYy0wYmUx/NThlYjBiNTg.webp" alt="Photography12" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/GIMOBQ6eMV4AD_i5-yglkz4gNLEBuHrZSVklo05YMqE/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8xMjIz/NDhiZS1kY2FkLTQy/YTAtYjQwYy05YjE3/ZWZhMTM0Nzc.webp" alt="Photography13" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/BKBrXhqSe85LVl5XiI1zrNLdFiAN7LKCHXbdqCPu8Co/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy84YmU1/YjZiMS1jYWQ4LTQ0/YjQtYjI1Yy0xMTA0/MGRiY2I3M2Q.webp" alt="Photography14" />
+        </div>
+        <div class="masonry-item">
+          <img
+            src="https://img.playbook.com/LYlJDAhDXn8B-W8iexhf85I8N0DdqWEU_juOOSDyCcc/w:1000/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9s/YXJnZV9wcmV2aWV3/cy9jNThmYzRkMS03/MmQ4LTQ2NWItOWY0/Ni0xNzFlY2ZkMmNm/ZmQ.webp"
+            alt="Photography15" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/vmyNMVxhKFkmc324cF7UuhBJXCsMZ4NtouPkV66sfTw/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yY2Q4/ZjRkMy0zOTAyLTQ0/YzAtOWVjMC1iZDgw/OTM3NzIyZTg.webp" alt="Photography16" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/4547tvw4ZHdPwgNsAeTiMwiBG77g5g45iEz22vKhIQ4/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy84NThj/ZWViNC02YzY4LTQx/MWMtYmM5NC03NjNk/ZWYzOWQ3YWY.webp" alt="Photography17" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/OknbsFJWtS8RJzUqflnNU_TCNzAh_ktHJXm0fbuJ9cg/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy83ZTA4/M2NkZi01NTU5LTRm/OTQtYTJjYS0xMWEy/MTViZWFiZmE.webp" alt="Photography18" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/jyROjMjChtUPSUzamMy_Qmspsm_R7rWGe2-xwmz-GSo/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9kYzNi/ZmYyYi03MzhmLTQw/YjMtODVhNS1lNTA2/OWUzZmQwNDY.webp" alt="Photography19" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/E6AdTaxAqHV_t_3AfyHtXWdlOlFSEGRtHASsgEkCj8g/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy85Yjdm/MTVlMS0wMjQxLTQ2/MTgtYTUyNS1hZDJh/MjBlZDY3ZTQ.webp" alt="Photography20" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/OnAmHW6Qt8Zav-e5CVBaeGCSMMtS7OTEVjHxda0wGN0/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yZDc0/MGJlNC0yOTEzLTRm/MjQtYjVlMS1iNDhl/MzdiMTg5YWI.webp" alt="Photography21" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/yjR35HEErbjgODM-uzi9c9cJppIipx1mlnwM3KKeBL8/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9hMDE4/ZGE1My00ZmQ5LTRh/ZDAtOTFjMC00ZWJj/ZWVhZDg3MTM.webp" alt="Photography22" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/L802LibeN2zZFYN1R0fsPUuvwBuWRnCT3mjH1jlPIas/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8zZDdj/ZmNlZS1mNzc4LTRl/MDItYmI0Zi02NmI2/YmIzZmY5ODY.webp" alt="Photography23" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/RrBRS_2Ic85GB5dV9R2q2Ccq-HnR27MCPEvosx0h7Xo/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy83OWNi/MWJlOS01ZmExLTRj/N2ItYjYwNy1iY2Nm/OTU4NDM2M2M.webp" alt="Photography24" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/eeS1f7esXn4VpaRtbUbyOHQXotknZba5ea96tsJNwv0/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yYzFm/NTU5MS0xMzczLTQy/ZTEtYmUyZC1kYTdi/ZjliYTMwMjM.webp" alt="Photography25" />
+        </div>
+        <div class="masonry-item">
+          <img src="https://img.playbook.com/YBuSN0q6XEl7vZDgyHbgd931fe0uJcrhfFJiPe96mI4/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9hNGNj/MjhiMy01NzZjLTRk/YzAtOTA1MC1lYjU5/Mjg0OGI1NDE.webp" alt="Photography26" />
+        </div>
+      </div>
+    </div>
 
-            .masonry-item img {
-                width: 100%;
-                height: auto;
-                display: block;
-                width: 100%;
-                display: block;
-                transition: transform 0.3s;
-            }
+    <!-- Footer -->
+    <div class="container-fluid g-0">
+      <footer class="text-white py-5" style="background: #24397c">
+        <div class="row px-3">
+          <div class="col-lg-3 col-md-12 px-3 mb-3 d-flex flex-column align-items-center">
+            <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
+            <p>© 2025</p>
+          </div>
 
-            .masonry-item:hover img {
-                transform: scale(1.05);
-                animation: shake 0.5s;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Topbar -->
-
-        <!-- Awal Header -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background: #24397c">
-            <div class="container-fluid">
-                <a class="ms-2 navbar-brand" href="#">
-                    <img src="assets/img/Logo-20.png" class="nav-item" width="50" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="layanan.html">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="portofolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontak.html">Contact</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Akhir Header -->
-  
-        <div class="flex justify-center gap-3 py-3">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="gallery-portofolio-crew.html">Crew</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="gallery-portofolio-video.html">Videos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="gallery-portofolio-yearbook.html">Yearbook</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-primary" href="gallery-portofolio-photography.html">Photography</a>
-                </li>
+          <div class="col-lg-3 col-md-4 px-3 mb-3">
+            <h5 class="mb-3">Our Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="layanan.html#yearbook" class="nav-link p-0 text-white">Yearbook</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="layanan.html#photography" class="nav-link p-0 text-white">Photography</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="layanan.html#videography" class="nav-link p-0 text-white">Videography</a>
+              </li>
             </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 px-3 mb-3">
+            <h5 class="mb-3">Social</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="https://www.instagram.com/sutoori.co/" class="nav-link p-0 text-white">Instagram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:sutoori@mail.com" class="nav-link p-0 text-white">Email</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="https://wa.me/6285211616326" class="nav-link p-0 text-white">Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 px-3">
+            <h5 class="mb-3">About</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link p-0 text-white">Sutoori</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="layanan.html" class="nav-link p-0 text-white">Our Services</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="portofolio.html" class="nav-link p-0 text-white">Portfolio</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="kontak.html" class="nav-link p-0 text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <figure class="text-center">
-            <h1>Photography</h1>
-        </figure>
+      </footer>
+    </div>
 
-        <div class="container mt-4">
-            <div class="masonry">
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/hWxpgrOL7_WDL5NgcBfLl_X5fOh86OXmd1ITSSg1joI/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yMGVj/M2M0Yi1jZmFiLTQy/OWYtOWUzOC0yOWM1/MWY4MTk0MWI.webp" 
-                    alt="Photography1">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/phLNbnEp-ezCw3SXD-xgzL7MDDT7D1npTg1gT6SF6do/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9mNGI1/OTdiZC0zZGZmLTQy/YWQtYmQ5MC05ODI5/Zjg3ZTI0ZmE.webp" 
-                    alt="Photography2">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/1qWL4RcQmTPNMjJwwUrI_ksHuPd__PCG2BPYLVBDV00/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8xMGEy/Y2ZlMy0yZDMyLTQ2/MzAtOGEyZC0xYTI2/YWJhNGViZjY.webp" 
-                    alt="Photography3">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/E9SIQXRtNttpRzcr21Q2ulrB17HNlMVJLvfxN7b34Sg/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy83ODMx/MGMwOS1mNGM3LTQz/YzEtYWU0OS03NjA0/NDNjOTRmZmE.webp" 
-                    alt="Photography4">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/qYl52n1NYFgGocf6QvYtdBERUvPNYmNknQ9F459sYiY/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9iNDZi/YTJlYi05OThhLTQw/MTItODM0Zi0zOTJm/ODhkMGIxZmQ.webp" 
-                    alt="Photography5">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/HCgGhaIHGOUxnI1aKGyiUFHSlYofY12tjgKyQT52hco/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8wOGNm/MDRmOC1lMDM5LTQy/OTMtODc2ZC1mNDNk/OWJkYzE5OTA.webp" 
-                    alt="Photography6">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/nIhpNN-pxXyT0Wfd1IDviavCkDR2RagTlrbM2zLHrTM/w:1000/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9s/YXJnZV9wcmV2aWV3/cy82ZGFmMDlhYS1j/NjBkLTQ0MGEtYWM1/My1kY2UxZGY1ZWY0/Mjc.webp" 
-                    alt="Photography7">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/62nGhlekjVu2ViSz-xSyUhqd0eQGJd5mx0AohDqSAwM/w:1000/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9s/YXJnZV9wcmV2aWV3/cy84Y2I3OGMzNy1l/YzBmLTQ2MzEtOWI3/Mi04OTYzNzhjNDUx/Mzk.webp" 
-                    alt="Photography8">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/hTGd7qPu4dJwM8-qV3eyyRXKz2tLMiVVxOBZdKA0Xb8/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8wZmFj/ZTA2ZC0zMmYyLTRm/ZDctYTljNy1lZjQ1/ZGVjY2NjNWY.webp" 
-                    alt="Photography9">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/YHYSlLDF3MqP0xrAs1plkKhpocJe4EANpMYVvf0Yc08/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy82NzNl/NzQxNy0xYWVlLTQz/OWYtYjkxNy02MTc2/NGVjYzM3NDI.webp" 
-                    alt="Photography10">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/cXQrLKCtMSFm3soc7FXYTjsVirMP7b6AZQE_9ndcwXE/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9lMjMx/ODk5ZS02OThhLTQw/Y2EtOWUyNy01Mzhj/N2I0Mzc1MTM.webp" 
-                    alt="Photography11">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/hjltrIahsIpLbjP-rI6a2f9vEFLZlCql5PggPiVp5Kw/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy82M2Jj/NDE5ZS02ODE3LTQz/YTktODMyYy0wYmUx/NThlYjBiNTg.webp" 
-                    alt="Photography12">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/GIMOBQ6eMV4AD_i5-yglkz4gNLEBuHrZSVklo05YMqE/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8xMjIz/NDhiZS1kY2FkLTQy/YTAtYjQwYy05YjE3/ZWZhMTM0Nzc.webp" 
-                    alt="Photography13">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/BKBrXhqSe85LVl5XiI1zrNLdFiAN7LKCHXbdqCPu8Co/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy84YmU1/YjZiMS1jYWQ4LTQ0/YjQtYjI1Yy0xMTA0/MGRiY2I3M2Q.webp" 
-                    alt="Photography14">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/LYlJDAhDXn8B-W8iexhf85I8N0DdqWEU_juOOSDyCcc/w:1000/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9s/YXJnZV9wcmV2aWV3/cy9jNThmYzRkMS03/MmQ4LTQ2NWItOWY0/Ni0xNzFlY2ZkMmNm/ZmQ.webp" 
-                    alt="Photography15">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/vmyNMVxhKFkmc324cF7UuhBJXCsMZ4NtouPkV66sfTw/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yY2Q4/ZjRkMy0zOTAyLTQ0/YzAtOWVjMC1iZDgw/OTM3NzIyZTg.webp" 
-                    alt="Photography16">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/4547tvw4ZHdPwgNsAeTiMwiBG77g5g45iEz22vKhIQ4/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy84NThj/ZWViNC02YzY4LTQx/MWMtYmM5NC03NjNk/ZWYzOWQ3YWY.webp" 
-                    alt="Photography17">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/OknbsFJWtS8RJzUqflnNU_TCNzAh_ktHJXm0fbuJ9cg/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy83ZTA4/M2NkZi01NTU5LTRm/OTQtYTJjYS0xMWEy/MTViZWFiZmE.webp" 
-                    alt="Photography18">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/jyROjMjChtUPSUzamMy_Qmspsm_R7rWGe2-xwmz-GSo/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9kYzNi/ZmYyYi03MzhmLTQw/YjMtODVhNS1lNTA2/OWUzZmQwNDY.webp" 
-                    alt="Photography19">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/E6AdTaxAqHV_t_3AfyHtXWdlOlFSEGRtHASsgEkCj8g/w:750/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy85Yjdm/MTVlMS0wMjQxLTQ2/MTgtYTUyNS1hZDJh/MjBlZDY3ZTQ.webp" 
-                    alt="Photography20">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/OnAmHW6Qt8Zav-e5CVBaeGCSMMtS7OTEVjHxda0wGN0/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yZDc0/MGJlNC0yOTEzLTRm/MjQtYjVlMS1iNDhl/MzdiMTg5YWI.webp" 
-                    alt="Photography21">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/yjR35HEErbjgODM-uzi9c9cJppIipx1mlnwM3KKeBL8/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9hMDE4/ZGE1My00ZmQ5LTRh/ZDAtOTFjMC00ZWJj/ZWVhZDg3MTM.webp" 
-                    alt="Photography22">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/L802LibeN2zZFYN1R0fsPUuvwBuWRnCT3mjH1jlPIas/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8zZDdj/ZmNlZS1mNzc4LTRl/MDItYmI0Zi02NmI2/YmIzZmY5ODY.webp" 
-                    alt="Photography23">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/RrBRS_2Ic85GB5dV9R2q2Ccq-HnR27MCPEvosx0h7Xo/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy83OWNi/MWJlOS01ZmExLTRj/N2ItYjYwNy1iY2Nm/OTU4NDM2M2M.webp" 
-                    alt="Photography24">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/eeS1f7esXn4VpaRtbUbyOHQXotknZba5ea96tsJNwv0/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8yYzFm/NTU5MS0xMzczLTQy/ZTEtYmUyZC1kYTdi/ZjliYTMwMjM.webp" 
-                    alt="Photography25">
-                </div>
-                <div class="masonry-item">
-                    <img src="https://img.playbook.com/YBuSN0q6XEl7vZDgyHbgd931fe0uJcrhfFJiPe96mI4/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9hNGNj/MjhiMy01NzZjLTRk/YzAtOTA1MC1lYjU5/Mjg0OGI1NDE.webp" 
-                    alt="Photography26">
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="container-fluid g-0">
-            <footer class="row g-0 text-white py-5 mt-5" style="background: #24397c">
-                <div class="col-md-3 mb-3 d-flex flex-column align-items-center">
-                    <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
-                    <p>© 2025</p>
-                </div>
-
-                <div class="col-md-3 mb-3">
-                    <h5>Layanan Kami</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Photobooth</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Partnership</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Photo Studio</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3 mb-3">
-                    <h5>Social</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Instagram</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Tiktok</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Whatsapp</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <h5>About</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Sutoori</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Layanan Kami</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Event</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Galeri</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Partnership</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Kontak Kami</a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
 </html>
