@@ -92,10 +92,10 @@
     </section>
 
     <!-- Contact Info Section -->
-    <section class="contact-info text-center">
+    <section class="text-center" style="background-color: #f7f7f7;">
       <button class="mini-btn">Our Contact</button>
-      <h2>Let’s Stay Connected</h2>
-      <div class="info-grid text-center" id="contact-list"></div>
+      <h2 class="mb-4">Let`s Stay Connected</h2>
+      <div class="d-md-flex justify-content-center gap-3 align-items-center" id="contact-list"></div>
     </section>
 
     <!-- FAQ Button -->
@@ -225,11 +225,13 @@
 
       contacts.forEach((contact) => {
         const contactItem = document.createElement("div");
-        contactItem.classList.add("info-box");
+        contactItem.classList.add("mb-3");
         contactItem.innerHTML = `
-        <span>${contact.icon}</span>
-        <h4>${contact.name}</h4>
-        <p>${contact.description}</p>
+        <div class="mx-auto p-3 rounded" style="background: #d6eea6; width: 300px; max-width: 100%;">
+          <span>${contact.icon}</span>
+          <h4>${contact.name}</h4>
+          <p>${contact.description}</p>
+        </div>
       `;
         contactList.appendChild(contactItem);
       });
