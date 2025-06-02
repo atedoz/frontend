@@ -3,7 +3,7 @@ const contacts = [
     id: "1",
     name: "Email Address",
     icon: "📧",
-    description: "Sutooristudio@mail.com",
+    description: "sutooriproduction@gmail.com",
   },
   {
     id: "2",
