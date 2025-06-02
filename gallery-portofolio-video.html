@@ -1,18 +1,111 @@
 <html>
   <head>
     <title>Portofolio Videos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/gallery-portfolio.css" />
-    <link rel="icon" type="image" href="assets/img/Logo-20.png" />
+
+    <style>
+      .navbar-brand:hover {
+        text-shadow: #24397c 0px 0px 5px;
+        transition: all 0.3s ease-in-out;
+      }
+      .video-thumbnail {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 15px;
+      }
+
+      .video-thumbnail img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .video-thumbnail:hover img {
+        transform: scale(1.05);
+      }
+
+      .video-duration {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .video-thumbnail:hover .video-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .play-button {
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+      }
+
+      .video-thumbnail:hover .play-button {
+        opacity: 1;
+      }
+
+      .play-button i {
+        color: #dc3545;
+        font-size: 24px;
+      }
+
+      .video-title {
+        margin-top: 8px;
+        font-weight: 500;
+      }
+
+      /* Modal styling */
+      .modal-video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .modal-video-container iframe,
+      .modal-video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
   </head>
   <body>
     <!-- Topbar -->
 
     <!-- Awal Header -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: #24397c">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: #24397c">
       <div class="container-fluid">
         <a class="ms-2 navbar-brand" href="#">
           <img src="assets/img/Logo-20.png" class="nav-item" width="50" />
@@ -40,8 +133,8 @@
     </nav>
     <!-- Akhir Header -->
 
-    <div class="flex sticky-nav justify-center gap-3 pt-3">
-      <ul class="nav justify-content-center py-2">
+    <div class="flex justify-center gap-3 py-3">
+      <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link text-dark" href="gallery-portofolio-crew.html">Crew</a>
         </li>
@@ -57,20 +150,14 @@
       </ul>
     </div>
 
-    <figure class="container py-5">
-      <h1 class="fw-bolder mb-2">Videos</h1>
-      <p class="mb-2">Check out some of the videos we’ve created — from fun promos to memorable events and cool creative projects. Ready to bring your story to life next?</p>
-    </figure>
+    <div class="container py-5">
+      <h1 class="mb-2">Videos</h1>
+      <p class="mb-4">Berikut adalah Video Project yang pernah dikerjakan</p>
 
-    <div class="container mt-4">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
         <!-- Video 1 -->
         <div class="col">
-          <div
-            class="video-thumbnail"
-            data-bs-toggle="modal"
-            data-bs-target="#videoModal"
-            data-video-url="https://storage.googleapis.com/brandify-usercontent-dev/a1e8968e-426c-4646-bcad-cf5ff8b3fdfe?Expires=1748908799&amp;GoogleAccessId=GOOG1EQYYUCN45RGYHGLHRS57FY5LN3ZFJOZEUIRTNHTBDZURLXQ4KVCAN4BI&amp;Signature=AGkPXycOTjwafN9tOppPiL%2FnEaE%3D%0A">
+          <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-url="#">
             <img src="https://img.playbook.com/_WPhw0WbE5N2Ry1rXI4lpsVbodiqbJ7TBCWZlkoMMWQ/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy82MDUw/MmM0NS02NDFmLTQ4/YjktYWMwNC05OGJh/OTI2MzRjNDY.webp" alt="Ecoventure" />
             <div class="video-overlay">
               <div class="play-button">
@@ -83,12 +170,7 @@
 
         <!-- Video 2 -->
         <div class="col">
-          <div
-            class="video-thumbnail"
-            data-bs-toggle="modal"
-            data-bs-target="#videoModal"
-            data-video-url="https://storage.googleapis.com/brandify-usercontent-dev/2deff2df-c68f-43ed-90ac-cea457ceadb8?Expires=1748908799&amp;GoogleAccessId=GOOG1EQYYUCN45RGYHGLHRS57FY5LN3ZFJOZEUIRTNHTBDZURLXQ4KVCAN4BI&amp;Signature=lQRsCIdB8lCbq5yvy43dn3zSoQg%3D%0A"
-            data-video-title="Sutoori Production">
+          <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-url="#" data-video-title="Sutoori Production">
             <img
               src="https://img.playbook.com/vEph9dO1Bp6_GgKVpmxgm3fY0F9nSTaZaMISzZz6CKQ/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy85MDEy/ZjU1Ny1iMTk3LTQ1/NmQtYThmYi02MjVm/NjA5Yjk4YTQ.webp"
               alt="Sutoori Production" />
@@ -205,60 +287,64 @@
 
     <!-- Footer -->
     <div class="container-fluid g-0">
-      <footer class="text-white py-5" style="background: #24397c">
-        <div class="row px-3">
-          <div class="col-lg-3 col-md-12 px-3 mb-3 d-flex flex-column align-items-center">
-            <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
-            <p>© 2025</p>
-          </div>
+      <footer class="row g-0 text-white py-5 mt-5" style="background: #24397c">
+        <div class="col-md-3 mb-3 d-flex flex-column align-items-center">
+          <img src="assets/img/Logo-20.png" style="max-width: 100%; max-height: 150px" />
+          <p>© 2025</p>
+        </div>
 
-          <div class="col-lg-3 col-md-4 px-3 mb-3">
-            <h5 class="mb-3">Our Services</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="layanan.html#yearbook" class="nav-link p-0 text-white">Yearbook</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="layanan.html#photography" class="nav-link p-0 text-white">Photography</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="layanan.html#videography" class="nav-link p-0 text-white">Videography</a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-md-3 mb-3">
+          <h5>Layanan Kami</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Photobooth</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Partnership</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Photo Studio</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="col-lg-3 col-md-4 px-3 mb-3">
-            <h5 class="mb-3">Social</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="https://www.instagram.com/sutoori.co/" class="nav-link p-0 text-white">Instagram</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="mailto:sutoori@mail.com" class="nav-link p-0 text-white">Email</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="https://wa.me/6285211616326" class="nav-link p-0 text-white">Whatsapp</a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-md-3 mb-3">
+          <h5>Social</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Instagram</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Tiktok</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Whatsapp</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="col-lg-3 col-md-4 px-3">
-            <h5 class="mb-3">About</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="index.html" class="nav-link p-0 text-white">Sutoori</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="layanan.html" class="nav-link p-0 text-white">Our Services</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="portofolio.html" class="nav-link p-0 text-white">Portfolio</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="kontak.html" class="nav-link p-0 text-white">Contact</a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-md-3">
+          <h5>About</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Sutoori</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Layanan Kami</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Event</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Galeri</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Partnership</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Kontak Kami</a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
